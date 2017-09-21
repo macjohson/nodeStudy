@@ -1,3 +1,10 @@
-const hello = require('./src/hello');
+const eventEmitter = require('events');
+class player extends eventEmitter{}
 
-console.log(hello.hello());
+const _player = new player();
+
+_player.on('play',(str)=>{
+    console.log(`playing ${str}`);
+});
+
+_player.emit('play','ninghao');
