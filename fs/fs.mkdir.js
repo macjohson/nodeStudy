@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // 创建一个目录
-fs.mkdir('logs',(error)=>{
+fs.mkdir('../logs',(error)=>{
   if (error) {
     console.log(error);
   }else{

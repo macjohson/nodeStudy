@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.stat('./index.js',(error,stats)=>{
+fs.stat('../index.js',(error,stats)=>{
   if (error) {
     console.log(error);
   }else{
